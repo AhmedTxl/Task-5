@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movement Controller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        a {
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        function stop() {
+                window.location.href = 'db.php?data=S';
+        }
+
+        function goLeft() {
+                window.location.href = 'db.php?data=L';
+        }
+
+        function goRight() {
+                window.location.href = 'db.php?data=R';
+        }
+
+        function goBackward() {
+                window.location.href = 'db.php?data=B';
+        }
+        
+        function goForward() {
+                window.location.href = 'db.php?data=F';
+        }
+    </script>
+</head>
+
+<body style="background: #fff4e9;">
+    <div style="margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-29%, -120%);
+    width: 386px;
+    height: 490px;" class="container">
+        
+        <div style="position: absolute; left: -24%; top: 50%;
+        transform: translate(6%, -50%); line-height: 4;" class="column text-center mt-64">
+            <h1 class="text-4xl font-bold underline mb-9">Movement Controller</h1>
+            <div class="row">
+                
+                <a  onclick="goForward()" class="inline-flex
+                        justify-center py-4 px-10 border
+                        border-transparent shadow-sm 
+                        text-sm font-medium rounded-md 
+                        text-white bg-indigo-600 hover:bg-indigo-700 
+                        focus:outline-none focus:ring-2 
+                        focus:ring-offset-2 focus:ring-indigo-500">Forward</a>
+            </div>
+            <div class="row">
+
+                <a  onclick="goLeft()" class="inline-flex 
+                        justify-center py-4 px-10 border 
+                        border-transparent shadow-sm text-sm 
+                        font-medium rounded-md text-white 
+                        bg-indigo-600 hover:bg-indigo-700 
+                        focus:outline-none focus:ring-2 
+                        focus:ring-offset-2 focus:ring-indigo-500">LEFT</a>
+
+                <a  onclick="stop()" class="inline-flex 
+                        justify-center py-4 px-10 border 
+                        border-transparent shadow-sm text-sm 
+                        font-medium rounded-md text-white 
+                        bg-indigo-600 hover:bg-indigo-700 
+                        focus:outline-none focus:ring-2 
+                        focus:ring-offset-2 focus:ring-indigo-500">STOP</a>
+
+                <a  onclick="goRight()" class="inline-flex 
+                        justify-center py-4 px-10 border 
+                        border-transparent shadow-sm text-sm 
+                        font-medium rounded-md text-white 
+                        bg-indigo-600 hover:bg-indigo-700 
+                        focus:outline-none focus:ring-2 
+                        focus:ring-offset-2 focus:ring-indigo-500">RIGHT</a>
+            </div>
+            <div class="row">
+
+                <a  onclick="goBackward()" class="inline-flex 
+                        justify-center py-4 px-10 border 
+                        border-transparent shadow-sm text-sm 
+                        font-medium rounded-md text-white 
+                        bg-indigo-600 hover:bg-indigo-700 
+                        focus:outline-none focus:ring-2 
+                        focus:ring-offset-2 focus:ring-indigo-500">Backward</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
