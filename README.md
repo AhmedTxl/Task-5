@@ -1,4 +1,4 @@
-# Movement Controller via website
+# Control move via website
 
 ## This is a required task from Smart Methods Foundation.
 
